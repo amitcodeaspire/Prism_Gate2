@@ -1,0 +1,23 @@
+[
+  {
+  "Amenities":"Club House",
+    "Capcity":"50 Peoples",
+    "Price":"Free"
+  },{
+  "Amenities":"Gym",
+    "Capcity":"45 Peoples",
+    "Price":"500₹"
+  },{
+  "Amenities":"Community Hall",
+    "Capcity":"100 Peoples",
+    "Price":"700₹"
+  },{
+  "Amenities":"Guest House",
+    "Capcity":"4 Peoples",
+    "Price":"500₹"
+  },{
+  "Amenities":"Indoor Theater",
+    "Capcity":"150 Peoples",
+    "Price":"1000₹"
+  }
+]

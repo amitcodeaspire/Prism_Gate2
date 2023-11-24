@@ -1,0 +1,10 @@
+./gradlew clean
+./gradlew assemblerealase
+
+useEffect(()=>{
+    requestUserPermission()
+    notifcationListner()
+    messaging().onMessage(async remoteMessage => {
+      Alert.alert('A new FCM message arrived!', JSON.stringify(remoteMessage.notification.title));
+    });
+  },[requestUserPermission,notifcationListner])

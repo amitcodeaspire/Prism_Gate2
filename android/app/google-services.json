@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "704073544811",
+    "firebase_url": "https://prism-worker-gate-default-rtdb.firebaseio.com",
+    "project_id": "prism-worker-gate",
+    "storage_bucket": "prism-worker-gate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704073544811:android:665cb3961f26e7223b2d2e",
+        "android_client_info": {
+          "package_name": "com.prismgate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704073544811-0sghtj658bjlkhq593c9pueum3dmqbdc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prismgate",
+            "certificate_hash": "0a7fc8cdcbb0159c75a3c7a597c5b34993e65410"
+          }
+        },
+        {
+          "client_id": "704073544811-2e52phh7eg4gi42vvcsj16u68uubi2ip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prismgate",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "704073544811-ntviam2oub44f7oos7qqj6veag06b4dl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx-RCU8REw84N4kC67X4x58eEHemgp9Hk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704073544811-ntviam2oub44f7oos7qqj6veag06b4dl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
