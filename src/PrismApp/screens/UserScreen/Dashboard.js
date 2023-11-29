@@ -106,6 +106,16 @@ export default function Dashboard({ navigation }) {
   const AllowServices = [
     {
       key: 1,
+      image: require('../../assets/allow/allow_guest.png'),
+      Firsttitle: 'Add',
+      Lasttitle: 'City',
+      onPress: () => {
+        navigation.navigate("AddCity");
+      },
+      
+    },
+    {
+      key: 2,
       image: require("../../assets/allow/allow_deliveryman.png"),
       Firsttitle: "Add",
       Lasttitle: "Vistor",
@@ -113,13 +123,7 @@ export default function Dashboard({ navigation }) {
         navigation.navigate("AddVistors");
       },
     },
-    // {
-    //   key: 2,
-    //   image: require('../../assets/allow/allow_guest.png'),
-    //   Firsttitle: 'Add',
-    //   Lasttitle: 'Guest',
-    //   onPress: () => {},
-    // },
+   
     {
       key: 3,
       image: require("../../assets/allow/allow_serviceman.png"),

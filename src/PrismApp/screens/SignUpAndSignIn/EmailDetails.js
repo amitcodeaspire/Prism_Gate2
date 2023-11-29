@@ -102,8 +102,8 @@ export default function EmailDetails({ navigation, route }) {
   async function onSubmit() {
     if (
       !State.value ||
-      !Society.value ||
-      !flatno ||
+      //!Society.value ||
+      //!flatno ||
       !City.value ||
       !Blocks.value ||
       !Name
@@ -184,7 +184,7 @@ export default function EmailDetails({ navigation, route }) {
             marginTop: 50,
           }}
         >
-          Select Society
+          Onboard Society
         </Text>
         <Text
           style={{
@@ -195,6 +195,7 @@ export default function EmailDetails({ navigation, route }) {
         >
           Search and Select Your Society listed on {"\n"}PrismGate
         </Text>
+        <>
         <Text
           style={{
             fontSize: 17,
@@ -227,6 +228,8 @@ export default function EmailDetails({ navigation, route }) {
             setIsFocus(false);
           }}
         />
+        </>
+        
         {State.value && (
           <>
             <Text
@@ -240,6 +243,7 @@ export default function EmailDetails({ navigation, route }) {
             >
               Select Your City
             </Text>
+           
             <Dropdown
               style={[styles.dropdown, isFocus && { borderColor: "blue" }]}
               placeholderStyle={styles.placeholderStyle}
@@ -251,7 +255,7 @@ export default function EmailDetails({ navigation, route }) {
               maxHeight={300}
               labelField="label"
               valueField="value"
-              placeholder={!isFocus ? "Select State" : "..."}
+              placeholder={!isFocus ? "Select City" : "..."}
               searchPlaceholder="Search..."
               value={City}
               onFocus={() => setIsFocus(true)}
@@ -263,7 +267,7 @@ export default function EmailDetails({ navigation, route }) {
             />
           </>
         )}
-        { City.value && (
+       
           <>
             <Text
               style={{
@@ -274,84 +278,12 @@ export default function EmailDetails({ navigation, route }) {
                 marginBottom: 10,
               }}
             >
-              Select Your Society
-            </Text>
-            <Dropdown
-              style={[styles.dropdown, isFocus && { borderColor: "blue" }]}
-              placeholderStyle={styles.placeholderStyle}
-              selectedTextStyle={styles.selectedTextStyle}
-              inputSearchStyle={styles.inputSearchStyle}
-              iconStyle={styles.iconStyle}
-              data={AllSociety}
-              search
-              maxHeight={300}
-              labelField="label"
-              valueField="value"
-              placeholder={!isFocus ? "Select Society" : "..."}
-              searchPlaceholder="Search..."
-              value={Society}
-              onFocus={() => setIsFocus(true)}
-              onBlur={() => setIsFocus(false)}
-              onChange={(item) => {
-                setSociety(item);
-                // setState(item.value);
-                setIsFocus(false);
-              }}
-            />
-          </>
-        )}
-
-          <>
-            <Text
-              style={{
-                fontSize: 17,
-                fontFamily: "Poppins-SemiBold",
-                color: "gray",
-                marginTop: 20,
-                marginBottom: 10,
-              }}
-            >
-              Select Your Blocks
-            </Text>
-            <Dropdown
-              style={[styles.dropdown, isFocus && { borderColor: "blue" }]}
-              placeholderStyle={styles.placeholderStyle}
-              selectedTextStyle={styles.selectedTextStyle}
-              inputSearchStyle={styles.inputSearchStyle}
-              iconStyle={styles.iconStyle}
-              data={AllBlocks}
-              search
-              maxHeight={300}
-              labelField="label"
-              valueField="value"
-              placeholder={!isFocus ? "Select Blocks" : "..."}
-              searchPlaceholder="Search..."
-              value={Blocks}
-              onFocus={() => setIsFocus(true)}
-              onBlur={() => setIsFocus(false)}
-              onChange={(item) => {
-                setBlocks(item);
-                setIsFocus(false);
-              }}
-            />
-          </>
-        
-          <>
-            <Text
-              style={{
-                fontSize: 17,
-                fontFamily: "Poppins-SemiBold",
-                color: "gray",
-                marginTop: 20,
-                marginBottom: 10,
-              }}
-            >
-              Enter Your FlatNo
+              Society Name
             </Text>
             <TextInput
-              value={flatno}
-              onChangeText={(f) => setflatno(f)}
-              placeholder="Eg. B-254"
+              value={Name}
+              onChangeText={(f) => SetName(f)}
+              placeholder="Eg. Z-squre"
               style={{
                 fontSize: 16,
                 fontFamily: "Poppins-Medium",
@@ -359,9 +291,80 @@ export default function EmailDetails({ navigation, route }) {
                 borderBottomWidth: 1,
               }}
             />
-          </>
+          
+          
+          <Text
+              style={{
+                fontSize: 17,
+                fontFamily: "Poppins-SemiBold",
+                color: "gray",
+                marginTop: 20,
+                marginBottom: 10,
+              }}
+            >
+              Enter Address
+            </Text>
+            <TextInput
+              value={Name}
+              onChangeText={(f) => SetName(f)}
+              placeholder="Eg. Address"
+              style={{
+                fontSize: 16,
+                fontFamily: "Poppins-Medium",
+                color: "black",
+                borderBottomWidth: 1,
+              }}
+            />
+            
+          
+            
+            <Text
+              style={{
+                fontSize: 17,
+                fontFamily: "Poppins-SemiBold",
+                color: "gray",
+                marginTop: 20,
+                marginBottom: 10,
+              }}
+            >
+              Enter Block Name
+            </Text>
+            <TextInput
+              value={Name}
+              onChangeText={(f) => SetName(f)}
+              placeholder="Eg. A or B"
+              style={{
+                fontSize: 16,
+                fontFamily: "Poppins-Medium",
+                color: "black",
+                borderBottomWidth: 1,
+              }}
+            />
+            <Text
+              style={{
+                fontSize: 17,
+                fontFamily: "Poppins-SemiBold",
+                color: "gray",
+                marginTop: 20,
+                marginBottom: 10,
+              }}
+            >
+              Enter Gate No.
+            </Text>
+            <TextInput
+              value={Name}
+              onChangeText={(f) => SetName(f)}
+              placeholder="Eg. 1 or 2"
+              style={{
+                fontSize: 16,
+                fontFamily: "Poppins-Medium",
+                color: "black",
+                borderBottomWidth: 1,
+              }}
+            />
+          
         
-          <>
+          
             <Text
               style={{
                 fontSize: 17,

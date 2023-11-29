@@ -232,7 +232,7 @@ export default AddVistors = ({navigation}) => {
               color: 'black',
               marginTop: 15,
             }}>
-            Add Vistor
+            Add Vistorss
           </Text>
           <TouchableOpacity onPress={() => setVisable(true)}>
             {Imageuri ? (
